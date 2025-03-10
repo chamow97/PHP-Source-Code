@@ -1,0 +1,14 @@
+<html>
+
+<script>
+
+    fetch("server.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: "Virat" })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data.message));
+
+</script>
+</html>
